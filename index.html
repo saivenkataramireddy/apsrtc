@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.P.S.R.T.C</title>
+</head>
+<body style="padding: 5rem; background-color: rgba(67, 67, 236, 0.814);">
+    <form action="ok.html" method="get">
+        <fieldset style="background-color: rgba(0, 0, 236, 0.703);">
+            <center>
+                <legend>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Andhra_Pradesh_State_Road_Transport_Corporation_logo.png" alt="logo" style="border-radius:50%;">
+                    <h3>ANDHRA PRADESH STATE ROAD TRANSPORT CORPORATION </h3>
+                    <h2>GENERAL BUS PASS APPLICATION</h2>
+                </legend>
+            </center>
+        </fieldset>
+
+        <center>
+            <fieldset>
+                <legend>APPLICATION DETAILS</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter here" required>
+
+                <label for="guardian">Father's/Guardian's Name:</label>
+                <input type="text" id="guardian" name="guardian" placeholder="Enter here" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Others</label><br>
+
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" placeholder="Enter here" required>
+
+                <label for="aadhaar">Aadhaar No:</label>
+                <input type="text" id="aadhaar" name="aadhaar" maxlength="12" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo" required>
+            </fieldset>
+        </center>
+
+        <center>
+            <fieldset style="background-color: rgba(24, 216, 24, 0.999);">
+                <legend style="background-color: rgb(58, 228, 75);">Address Details</legend>
+                
+                <label for="address">Applicant Address:</label>
+                <textarea id="address" name="address"></textarea>
+
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option disabled selected value="select">---select---</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Telangana</option>
+                    <option>Prakasham</option>
+                </select>
+
+                <label for="pincode">Pin Code:</label>
+                <input type="text" id="pincode" name="pincode"><br><br><br>
+
+                <img src="https://ialabs.ie/wp-content/uploads/2023/10/Picture1.png" alt="captcha" width="50%" height="190px">
+            </fieldset><br><br>
+
+            <button type="submit">Submit</button>
+        </center>
+    </form>
+</body>
+</html>
